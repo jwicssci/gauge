@@ -14,9 +14,10 @@ app = dash.Dash(__name__)
 app.layout = html.Div([
     daq.Gauge(
         id='my-gauge-1',
+        color="#76b900",
         showCurrentValue=True,
         units="C",
-        label="GPU Temp",
+        label="CPU Temp",
         min=0,
         max=100,
         value=50
