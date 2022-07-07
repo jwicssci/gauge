@@ -14,6 +14,8 @@ app = dash.Dash(__name__)
 app.layout = html.Div([
     daq.Gauge(
         id='my-gauge-1',
+        showCurrentValue=True,
+        units="C",
         label="GPU Temp",
         min=0,
         max=100,
